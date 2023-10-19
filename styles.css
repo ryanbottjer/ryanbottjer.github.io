@@ -1,0 +1,110 @@
+* {
+	background-color: tan;
+}
+
+h1 {
+	background-color: navajowhite;
+	color: black;
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	background-color: navajowhite;
+	color: black;
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+h3 {
+	color: black;
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 25px;
+	margin: 25px;
+	text-align: center;
+}
+
+h4 {
+	padding: 10px;
+	background-color: navajowhite;
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1.75;
+}
+
+.text-container {
+	padding: 25px;
+	margin: 25px;
+	display: block;
+	border: 5px solid #621708;
+	background-color: navajowhite;	
+}
+
+.header-container {
+	border: 5px solid #621708;
+	background-color: navajowhite;	
+	margin: 25px;
+}
+
+.ingredients {
+	display: block;
+	width: 450px;
+}
+
+ol, li {
+	background-color: navajowhite;
+}
+
+button, a {
+	margin: 25px;
+	background-color: navajowhite;
+	padding: 20px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.img1 {
+	display: block;
+	border: 5px solid #621708;
+	width: 300px;
+	height: 300px;
+	margin: 25px;
+	align-content: left;
+}
+
+.img2 {
+	display: block;
+	border: 5px solid #621708;
+	width: 900px;
+	height: 400px;
+	margin: 25px;
+}
+
+#front-img {
+	display: block;
+	border: 5px solid #621708;
+	width: 900px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+}
+
+.row2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
