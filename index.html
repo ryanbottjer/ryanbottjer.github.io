@@ -3,26 +3,75 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ryan's Recipes</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Flexbox Blackjack</title>
 </head>
 <body>
-	<div class="header-container">
-		<h1>
-			Ryan's Recipes
-    	</h1>
+	<div id="main-sections">
+		<div id="both-headers">
+			<div id="main-header">
+			Flexbox Blackjack
+			</div>
+			<div id="message-area">
+				<div id="messagecontent">
+				Press 'reset' to begin the game.
+				</div>
+			</div>
+		</div>
+		<div id="player-and-dealer">
+			<div id="dealer">
+				<div class="player-or-dealer-header">
+					<p>Dealer</p>
+				</div>
+				<div id="dealer-card-holder">
+					<div class="cards">
+						<img class="dealercard" id="dealercard1" src="images/blank.svg"></img>
+						<img class="dealercard" id="dealercard2" src="images/blank.svg"></img>
+						<img class="dealercard" id="dealercard3" src="images/blank.svg"></img>
+						<img class="dealercard" id="dealercard4" src="images/blank.svg"></img>
+					</div>
+					<p id="dealerwon"> Games Won: </p>
+				</div>
+				<div class="score-box" id="dealerscore">
+					<div id="dealerscoretext">
+					Score: __ 
+					</div>
+				</div>
+			</div>
+			<div id="player">
+				<div class="player-or-dealer-header">
+					<p>Player</p>
+				</div>
+				<div id="cards-and-actions">
+					<div id="player-card-holder">
+						<div id="cards">
+							<img class="playercard" id="usercard1" src="images/blank.svg"></img>
+							<img class="playercard" id="usercard2" src="images/blank.svg"></img>
+							<img class="playercard" id="usercard3" src="images/blank.svg"></img>
+							<img class="playercard" id="usercard4" src="images/blank.svg"></img>
+						</div>
+						<p id="userwon"> Games Won: </p>
+					</div>
+					<div id="actions">
+						<button onclick="hit()" disabled = "true" class="action-button" id="hitbutton">
+							<p> Hit </p>
+						</button>
+						<button onclick="stand()" disabled = "true" class="action-button" id="standbutton">
+							<p> Stand </p>
+						</button>
+						<button onclick="reset()" class="action-button" id="resetbutton">
+							<p> Reset </p>
+						</button>
+					</div>
+				</div>
+				<div class="score-box" id="userscore">
+					<div id="userscoretext">
+					Score: __ 
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<img id="front-img" src="front_image/pumpkins.jpeg" alt="Pumpkins">
-	<center>
-		<button type="button">
-			<a href="recipes/cupcakes.html">Pumpkin Cupcakes</a>
-		</button>
-		<button type="button">
-			<a href="recipes/pies.html">Apple Hand Pies</a>
-		</button>
-		<button type="button">
-			<a href="recipes/whoopie.html">Pumpkin Whoopie Pies</a>
-		</button>
-	</center>
-</body> 
+	<script type="text/javascript" src="script.js"></script>
+</body>
 </html>

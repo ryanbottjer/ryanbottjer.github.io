@@ -1,110 +1,170 @@
-* {
-	background-color: tan;
+body {
+	background-color: black;
 }
 
-h1 {
-	background-color: navajowhite;
-	color: black;
+#main-sections {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+	height: 100vh;
+}
+
+#both-headers {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#main-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: maroon;
 	font-family: "Copperplate", fantasy;, serif;
-	font-size: 50px;
-	text-align: center;
+	font-size: 40px;
+	padding: 40px;
+	font-weight: bold;
+	border: white 3px solid;
 }
 
-h2 {
-	background-color: navajowhite;
-	color: black;
+#message-area{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: maroon;
+	border: white 3px solid;
+}
+
+#messagecontent{
 	font-family: "Copperplate", fantasy;, serif;
 	font-size: 30px;
-	text-align: center;
 }
 
-h3 {
-	color: black;
+#player-and-dealer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: stretch;
+	gap: 10px;
+	flex: 1;
+}
+
+#dealer{
+	background-image: linear-gradient(to bottom right, darkgreen, black);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: white 3px solid;
+	gap: 5px;
+	align-items: stretch;
+	flex: 2;
+}
+
+#player{
+	background-image: linear-gradient(to bottom right, darkgreen, black);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: white 3px solid;
+	gap: 5px;
+	align-items: stretch;
+	flex: 3;
+}
+
+.player-or-dealer-header{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 20px;
+	background-color: brown;
+	display: flex;
+	justify-content: center;
+	border: black 3px solid;	
+	margin: 10px;
+}
+
+#dealer-card-holder{
+	background-color: forestgreen;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border: black 3px solid;
+	margin: 10px;
+	flex: 1;
+}
+
+.cards{
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+
+#cards-and-actions{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex: 1;
+}
+
+#player-card-holder{
+	background-color: forestgreen;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border: black 3px solid;
+	margin: 10px;
+	flex: 4;
+}
+
+#actions{
+	background-color: forestgreen;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: black 3px solid;
+	flex: 1;
+	margin: 10px;
+}
+
+.action-button{
+	background-color: brown;
 	font-family: "Copperplate", fantasy;, serif;
 	font-size: 25px;
-	margin: 25px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: black 2px solid;
+	margin: 10px;
 }
 
-h4 {
+.dealercard{
+	width: 125px;
+	height: 200px;
+}
+
+.playercard{
+	width: 150px;
+	height: 225px;
+}
+
+.score-box{
+	background-color: brown;
+	border: black 3px solid;
+	margin: 10px;
 	padding: 10px;
-	background-color: navajowhite;
-	color: black;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 18px;
-	text-align: center;
-	font-weight: bold;
-	font-style: italic;
-	line-height: 1.75;
-}
-
-.text-container {
-	padding: 25px;
-	margin: 25px;
-	display: block;
-	border: 5px solid #621708;
-	background-color: navajowhite;	
-}
-
-.header-container {
-	border: 5px solid #621708;
-	background-color: navajowhite;	
-	margin: 25px;
-}
-
-.ingredients {
-	display: block;
-	width: 450px;
-}
-
-ol, li {
-	background-color: navajowhite;
-}
-
-button, a {
-	margin: 25px;
-	background-color: navajowhite;
-	padding: 20px;
-	font-family: "Times New Roman", Times, serif;
-	font-size: 15px;
-	font-weight: bold;
-	text-decoration: none;
-	color: black;
-}
-
-.img1 {
-	display: block;
-	border: 5px solid #621708;
-	width: 300px;
-	height: 300px;
-	margin: 25px;
-	align-content: left;
-}
-
-.img2 {
-	display: block;
-	border: 5px solid #621708;
-	width: 900px;
-	height: 400px;
-	margin: 25px;
-}
-
-#front-img {
-	display: block;
-	border: 5px solid #621708;
-	width: 900px;
-	height: 400px;
-	margin: 0 auto;
-}
-
-.row {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
-.row2 {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+#userscoretext, #dealerscoretext{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 20px;
 }
 
+#dealerwon, #userwon{
+	font-family: "Copperplate", fantasy;, serif;
+	font-size: 20px;
+}
